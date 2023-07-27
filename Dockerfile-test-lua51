@@ -1,4 +1,4 @@
-FROM openresty/openresty:1.21.4.1-centos
+FROM openresty/openresty:1.21.4.2-centos
 
 # Runtime dependencies
 RUN yum -y install \
