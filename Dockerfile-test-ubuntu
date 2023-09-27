@@ -1,4 +1,4 @@
-FROM openresty/openresty:1.21.4.1-1-bionic
+FROM openresty/openresty:1.21.4.2-1-bionic
 
 ENV DEBIAN_FRONTEND noninteractive
 
