@@ -7,7 +7,7 @@ return function(auto_ssl_instance)
   local path = ngx.var.request_uri
   local matches, match_err = ngx.re.match(path, "/([A-Za-z0-9\\-_]+)$", "jo")
   if not matches or not matches[1] then
-    ngx.exit(ngx.HTTP_NOT_FOUND)
+    ngx.exit(ngx.HTTP_BAD_REQUEST)
   elseif match_err then
     ngx.log(ngx.ERR, "auto-ssl: regex error: ", match_err)
   end
